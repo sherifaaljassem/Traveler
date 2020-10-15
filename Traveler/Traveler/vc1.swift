@@ -7,4 +7,9 @@
 //
 
 import Foundation
-struct 
+struct traveler{
+    var countryName : String
+    var countryImage : String
+}
+
+
