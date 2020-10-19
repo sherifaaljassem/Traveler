@@ -1,5 +1,5 @@
 //
-//  flagsViewController.swift
+//  chooseAreaViewController.swift
 //  Traveler
 //
 //  Created by Sherifa Aljassem on 10/19/20.
@@ -7,25 +7,18 @@
 //
 
 import UIKit
-var selectedCountry: [country]!
-class flagsViewController: UIViewController {
 
+class chooseAreaViewController: UIViewController {
+
+    @IBAction func chooseArea(_ sender: Any) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func flag(_ sender: Any){
-    
-        if (sender as AnyObject).tag == 0{
-    selectedCountry = turkey
-        }else if (sender as AnyObject).tag == 1{
-    selectedCountry = germany
-        } else if (sender as AnyObject).tag == 2{
-    selectedCountry = britain
-    }
-    }
+
     /*
     // MARK: - Navigation
 
