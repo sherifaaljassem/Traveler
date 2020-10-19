@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Q3h-bg-ZSi">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -7,10 +7,26 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="IIh-7i-OH6">
+            <objects>
+                <navigationController id="Q3h-bg-ZSi" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4gD-MM-wo8">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" id="ecZ-ll-HXJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zD7-m5-nJe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-600" y="119"/>
+        </scene>
+        <!--register-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Traveler" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="register" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="Traveler" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,6 +55,9 @@
                                 <state key="normal" title="Log in">
                                     <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fCt-YP-kHa" kind="show" id="UDs-Uo-l0V"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oyp-9b-zVK">
                                 <rect key="frame" x="239" y="778" width="148" height="49"/>
@@ -47,18 +66,29 @@
                                 <state key="normal" title="sign as a guest">
                                     <color key="titleColor" red="0.057355255850758152" green="0.088991592752479087" blue="0.80995315313339233" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fCt-YP-kHa" kind="show" id="iKF-Fx-tdc"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTN-2J-R5O">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Don't want to log in?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTN-2J-R5O">
                                 <rect key="frame" x="38" y="785" width="205" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fHr-bG-5FS">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Register page" id="eUp-ju-iai"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="aLw-bl-wUL"/>
                     <connections>
                         <outlet property="backgroundImage" destination="5Se-O9-AAB" id="kRD-SM-bEy"/>
                         <outlet property="blurredImage" destination="5Se-O9-AAB" id="Ah6-Ux-R7W"/>
@@ -66,49 +96,87 @@
                         <outlet property="logInButton" destination="m1l-ZD-413" id="Wcg-xN-1OA"/>
                         <outlet property="passwordField" destination="5Se-O9-AAB" id="PkJ-5d-tbI"/>
                         <outlet property="signAsGuest" destination="Oyp-9b-zVK" id="FZo-Hy-0yl"/>
-                        <segue destination="fCt-YP-kHa" kind="show" id="mhm-I1-7Lg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
         </scene>
-        <!--View Controller-->
+        <!--Flags View Controller-->
         <scene sceneID="xYs-wS-ME3">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="fCt-YP-kHa" customClass="ViewController" customModule="Traveler" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="fCt-YP-kHa" customClass="flagsViewController" customModule="Traveler" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qMf-U1-mS3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="turkeyflag" translatesAutoresizingMaskIntoConstraints="NO" id="mzF-ga-KgJ">
-                                <rect key="frame" x="76" y="126" width="240" height="128"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h31-2u-KoT">
+                                <rect key="frame" x="91" y="569" width="210" height="217"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="germanyflag" translatesAutoresizingMaskIntoConstraints="NO" id="Dh9-s7-AF2">
-                                <rect key="frame" x="76" y="360" width="240" height="128"/>
+                                <state key="normal" title="Button" image="londonflag"/>
+                                <connections>
+                                    <action selector="flag:" destination="fCt-YP-kHa" eventType="touchUpInside" id="3qO-at-62K"/>
+                                    <segue destination="4Zl-iy-sij" kind="show" id="hYQ-iB-SdC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FEh-Xu-4iS">
+                                <rect key="frame" x="115" y="133" width="163" height="162"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="londonflag" translatesAutoresizingMaskIntoConstraints="NO" id="d35-tb-nsw">
-                                <rect key="frame" x="27" y="573" width="350" height="164"/>
+                                <state key="normal" title="Button" image="turkeyflag"/>
+                                <connections>
+                                    <action selector="flag:" destination="fCt-YP-kHa" eventType="touchUpInside" id="dv1-BK-E2Y"/>
+                                    <segue destination="4Zl-iy-sij" kind="show" id="gK1-Q5-6tg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p00-S2-lu4">
+                                <rect key="frame" x="116" y="375" width="160" height="165"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <state key="normal" title="Button" image="germanyflag"/>
+                                <connections>
+                                    <action selector="flag:" destination="fCt-YP-kHa" eventType="touchUpInside" id="ah9-yl-QOc"/>
+                                    <segue destination="4Zl-iy-sij" kind="show" id="rRv-pd-QkH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="gSL-t5-ysP"/>
                     </view>
-                    <navigationItem key="navigationItem" id="1Hp-oE-xoZ"/>
-                    <connections>
-                        <outlet property="germanyFlag" destination="Dh9-s7-AF2" id="51e-mT-Nhh"/>
-                        <outlet property="londonFlag" destination="d35-tb-nsw" id="oCy-2g-WJE"/>
-                        <outlet property="turkeyFlag" destination="mzF-ga-KgJ" id="F6X-PQ-kKB"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="0nH-mW-YZQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dqv-z4-52b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationItem title="return " id="vEF-wj-Ti0" userLabel="return"/>
             </objects>
             <point key="canvasLocation" x="818.84057971014499" y="118.52678571428571"/>
         </scene>
+        <!--choose an area-->
+        <scene sceneID="qkr-Nq-l58">
+            <objects>
+                <viewController title="choose an area" modalPresentationStyle="fullScreen" id="4Zl-iy-sij" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pW5-z8-oTj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="choose an area" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rfM-6K-AKb">
+                                <rect key="frame" x="96" y="189" width="223" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="5De-zT-JNV"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="FnH-Qw-ENV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QeA-DD-sou" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1515.9420289855075" y="118.52678571428571"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="hYQ-iB-SdC"/>
+        <segue reference="iKF-Fx-tdc"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="germanyflag" width="1020" height="1020"/>
         <image name="londonflag" width="512" height="512"/>

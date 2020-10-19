@@ -15,6 +15,7 @@
 		E965009E25377D67001FA4B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E965009C25377D67001FA4B2 /* LaunchScreen.storyboard */; };
 		E96500A625378292001FA4B2 /* vc1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96500A525378292001FA4B2 /* vc1.swift */; };
 		E96500A82538D603001FA4B2 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96500A72538D603001FA4B2 /* TableViewCell.swift */; };
+		E96500AA253DF351001FA4B2 /* flagsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96500A9253DF351001FA4B2 /* flagsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		E965009F25377D67001FA4B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E96500A525378292001FA4B2 /* vc1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vc1.swift; sourceTree = "<group>"; };
 		E96500A72538D603001FA4B2 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		E96500A9253DF351001FA4B2 /* flagsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flagsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				E965009725377D66001FA4B2 /* Main.storyboard */,
 				E96500A72538D603001FA4B2 /* TableViewCell.swift */,
 				E96500A525378292001FA4B2 /* vc1.swift */,
+				E96500A9253DF351001FA4B2 /* flagsViewController.swift */,
 				E965009A25377D67001FA4B2 /* Assets.xcassets */,
 				E965009C25377D67001FA4B2 /* LaunchScreen.storyboard */,
 				E965009F25377D67001FA4B2 /* Info.plist */,
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E96500AA253DF351001FA4B2 /* flagsViewController.swift in Sources */,
 				E96500A82538D603001FA4B2 /* TableViewCell.swift in Sources */,
 				E965009625377D66001FA4B2 /* ViewController.swift in Sources */,
 				E965009225377D66001FA4B2 /* AppDelegate.swift in Sources */,
