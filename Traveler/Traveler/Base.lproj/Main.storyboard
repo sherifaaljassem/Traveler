@@ -165,9 +165,10 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1E-IH-tQ3">
                                 <rect key="frame" x="155" y="281" width="105" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="choose"/>
                                 <connections>
                                     <action selector="chooseArea:" destination="4Zl-iy-sij" eventType="touchUpInside" id="KKU-sS-L2W"/>
+                                    <segue destination="eO1-GX-xwU" kind="show" id="tDW-Et-pcG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -180,15 +181,77 @@
             </objects>
             <point key="canvasLocation" x="1515.9420289855075" y="118.52678571428571"/>
         </scene>
+        <!--Services View Controller-->
+        <scene sceneID="GK5-MW-9Fa">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="eO1-GX-xwU" customClass="servicesViewController" customModule="Traveler" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rjw-2Y-ra8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tY-Z9-kcL">
+                                <rect key="frame" x="100" y="339" width="222" height="197"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="restaurant"/>
+                                <connections>
+                                    <segue destination="PlX-Uy-qE4" kind="show" id="gAB-sh-gFH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTj-9g-yxV">
+                                <rect key="frame" x="100" y="90" width="214" height="194"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="mall"/>
+                                <connections>
+                                    <segue destination="PlX-Uy-qE4" kind="show" id="KzJ-XH-7zd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxd-kL-hcC">
+                                <rect key="frame" x="100" y="620" width="239" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="park"/>
+                                <connections>
+                                    <segue destination="PlX-Uy-qE4" kind="show" id="g8e-Jo-NOQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Ovt-3s-KeD"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3jh-X3-4Oz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TTp-qB-0VO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2273.913043478261" y="118.52678571428571"/>
+        </scene>
+        <!--Services View Controller-->
+        <scene sceneID="sEk-Yr-Vii">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="PlX-Uy-qE4" customClass="servicesViewController" customModule="Traveler" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RBv-Cl-j1p">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Tm1-IF-sO0"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Rw2-Iw-95Y"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5km-uO-h0R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3032" y="119"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="g8e-Jo-NOQ"/>
         <segue reference="hYQ-iB-SdC"/>
-        <segue reference="iKF-Fx-tdc"/>
+        <segue reference="UDs-Uo-l0V"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="germanyflag" width="1020" height="1020"/>
         <image name="londonflag" width="512" height="512"/>
+        <image name="mall" width="1000" height="1007"/>
         <image name="mountain bg" width="564" height="1002"/>
+        <image name="park" width="512" height="370"/>
+        <image name="restaurant" width="998" height="748"/>
         <image name="turkeyflag" width="250" height="250"/>
     </resources>
 </document>
