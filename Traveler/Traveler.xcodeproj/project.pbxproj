@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		E965009225377D66001FA4B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E965009125377D66001FA4B2 /* AppDelegate.swift */; };
 		E965009425377D66001FA4B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E965009325377D66001FA4B2 /* SceneDelegate.swift */; };
-		E965009625377D66001FA4B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E965009525377D66001FA4B2 /* ViewController.swift */; };
+		E965009625377D66001FA4B2 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E965009525377D66001FA4B2 /* loginViewController.swift */; };
 		E965009925377D66001FA4B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E965009725377D66001FA4B2 /* Main.storyboard */; };
 		E965009B25377D67001FA4B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E965009A25377D67001FA4B2 /* Assets.xcassets */; };
 		E965009E25377D67001FA4B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E965009C25377D67001FA4B2 /* LaunchScreen.storyboard */; };
@@ -17,7 +17,6 @@
 		E96500A82538D603001FA4B2 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96500A72538D603001FA4B2 /* TableViewCell.swift */; };
 		E96500AA253DF351001FA4B2 /* flagsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96500A9253DF351001FA4B2 /* flagsViewController.swift */; };
 		E9D891FC253E1DA70042CD62 /* chooseAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D891FB253E1DA70042CD62 /* chooseAreaViewController.swift */; };
-		E9D891FE253F6E0A0042CD62 /* servicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D891FD253F6E0A0042CD62 /* servicesViewController.swift */; };
 		E9D8920025403AF50042CD62 /* choosenServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D891FF25403AF50042CD62 /* choosenServiceTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,7 +24,7 @@
 		E965008E25377D66001FA4B2 /* Traveler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Traveler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E965009125377D66001FA4B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E965009325377D66001FA4B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E965009525377D66001FA4B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E965009525377D66001FA4B2 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		E965009825377D66001FA4B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E965009A25377D67001FA4B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E965009D25377D67001FA4B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -34,7 +33,6 @@
 		E96500A72538D603001FA4B2 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		E96500A9253DF351001FA4B2 /* flagsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flagsViewController.swift; sourceTree = "<group>"; };
 		E9D891FB253E1DA70042CD62 /* chooseAreaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chooseAreaViewController.swift; sourceTree = "<group>"; };
-		E9D891FD253F6E0A0042CD62 /* servicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = servicesViewController.swift; sourceTree = "<group>"; };
 		E9D891FF25403AF50042CD62 /* choosenServiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = choosenServiceTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,10 +68,9 @@
 			children = (
 				E965009125377D66001FA4B2 /* AppDelegate.swift */,
 				E965009325377D66001FA4B2 /* SceneDelegate.swift */,
-				E965009525377D66001FA4B2 /* ViewController.swift */,
+				E965009525377D66001FA4B2 /* loginViewController.swift */,
 				E965009725377D66001FA4B2 /* Main.storyboard */,
 				E9D891FF25403AF50042CD62 /* choosenServiceTableViewCell.swift */,
-				E9D891FD253F6E0A0042CD62 /* servicesViewController.swift */,
 				E9D891FB253E1DA70042CD62 /* chooseAreaViewController.swift */,
 				E96500A72538D603001FA4B2 /* TableViewCell.swift */,
 				E96500A525378292001FA4B2 /* vc1.swift */,
@@ -158,8 +155,7 @@
 			files = (
 				E96500AA253DF351001FA4B2 /* flagsViewController.swift in Sources */,
 				E96500A82538D603001FA4B2 /* TableViewCell.swift in Sources */,
-				E9D891FE253F6E0A0042CD62 /* servicesViewController.swift in Sources */,
-				E965009625377D66001FA4B2 /* ViewController.swift in Sources */,
+				E965009625377D66001FA4B2 /* loginViewController.swift in Sources */,
 				E9D8920025403AF50042CD62 /* choosenServiceTableViewCell.swift in Sources */,
 				E965009225377D66001FA4B2 /* AppDelegate.swift in Sources */,
 				E96500A625378292001FA4B2 /* vc1.swift in Sources */,

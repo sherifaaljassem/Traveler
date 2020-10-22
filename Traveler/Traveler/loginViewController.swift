@@ -10,13 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var emailField: UITextField!
-    
+
     @IBOutlet weak var blurredImage: UIImageView!
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var passwordField: UIImageView!
-    @IBOutlet weak var logInButton: UIButton!
-    @IBOutlet weak var signAsGuest: UIButton!
-
+   
+    @IBAction func logIn(_ sender: Any) {
+    }
+    @IBAction func signAsAGuest(_ sender: Any) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup afterloading the view.

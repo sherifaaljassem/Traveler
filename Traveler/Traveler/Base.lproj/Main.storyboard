@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fCt-YP-kHa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dKb-wo-BOC">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -56,6 +56,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 </state>
                                 <connections>
+                                    <action selector="logIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GiX-BZ-1Lc"/>
                                     <segue destination="fCt-YP-kHa" kind="show" id="UDs-Uo-l0V"/>
                                 </connections>
                             </button>
@@ -67,6 +68,7 @@
                                     <color key="titleColor" red="0.057355255850758152" green="0.088991592752479087" blue="0.80995315313339233" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
+                                    <action selector="signAsAGuest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9XT-Wc-s0R"/>
                                     <segue destination="fCt-YP-kHa" kind="show" id="iKF-Fx-tdc"/>
                                 </connections>
                             </button>
@@ -156,26 +158,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="choose an area" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rfM-6K-AKb">
-                                <rect key="frame" x="96" y="189" width="223" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="choose an area" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qbd-R1-TeT">
+                                <rect key="frame" x="90" y="251" width="235" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1E-IH-tQ3">
-                                <rect key="frame" x="155" y="281" width="105" height="88"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="choose"/>
-                                <connections>
-                                    <action selector="chooseArea:" destination="4Zl-iy-sij" eventType="touchUpInside" id="KKU-sS-L2W"/>
-                                    <segue destination="eO1-GX-xwU" kind="show" id="tDW-Et-pcG"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="5De-zT-JNV"/>
                     </view>
                     <navigationItem key="navigationItem" id="FnH-Qw-ENV"/>
+                    <connections>
+                        <outlet property="areaTextField" destination="Qbd-R1-TeT" id="sOH-Zl-BPY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QeA-DD-sou" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -189,28 +185,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tY-Z9-kcL">
-                                <rect key="frame" x="100" y="339" width="222" height="197"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="restaurant"/>
-                                <connections>
-                                    <segue destination="PlX-Uy-qE4" kind="show" id="gAB-sh-gFH"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTj-9g-yxV">
-                                <rect key="frame" x="100" y="90" width="214" height="194"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="mall"/>
-                                <connections>
-                                    <segue destination="PlX-Uy-qE4" kind="show" id="KzJ-XH-7zd"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxd-kL-hcC">
                                 <rect key="frame" x="100" y="620" width="239" height="171"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="park"/>
                                 <connections>
-                                    <segue destination="PlX-Uy-qE4" kind="show" id="g8e-Jo-NOQ"/>
+                                    <segue destination="dKb-wo-BOC" kind="show" id="Hz0-Bk-tfu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2h-OW-lIb">
+                                <rect key="frame" x="100" y="134" width="222" height="197"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="mall"/>
+                                <connections>
+                                    <segue destination="dKb-wo-BOC" kind="show" id="fhi-mT-Hc6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tY-Z9-kcL">
+                                <rect key="frame" x="100" y="375" width="222" height="197"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="restaurant"/>
+                                <connections>
+                                    <segue destination="dKb-wo-BOC" kind="show" id="yjJ-ld-dkO"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -223,32 +219,45 @@
             </objects>
             <point key="canvasLocation" x="2273.913043478261" y="118.52678571428571"/>
         </scene>
-        <!--Services View Controller-->
-        <scene sceneID="sEk-Yr-Vii">
+        <!--choosenServices-->
+        <scene sceneID="mN2-Ro-arC">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="PlX-Uy-qE4" customClass="servicesViewController" customModule="Traveler" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="RBv-Cl-j1p">
+                <tableViewController title="choosenServices" modalPresentationStyle="fullScreen" id="dKb-wo-BOC" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="KYj-8m-CgK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="Tm1-IF-sO0"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Rw2-Iw-95Y"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5km-uO-h0R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="64" id="cHb-TX-Cng" customClass="choosenServiceTableViewCell" customModule="Traveler" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="64"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cHb-TX-Cng" id="402-yY-pEo">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="dKb-wo-BOC" id="WTu-7w-Hb9"/>
+                            <outlet property="delegate" destination="dKb-wo-BOC" id="ALy-by-KtM"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="2TJ-FF-kQU"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pJj-sf-fxj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3032" y="119"/>
+            <point key="canvasLocation" x="3028.985507246377" y="118.52678571428571"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="g8e-Jo-NOQ"/>
+        <segue reference="Hz0-Bk-tfu"/>
         <segue reference="hYQ-iB-SdC"/>
         <segue reference="UDs-Uo-l0V"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="germanyflag" width="1020" height="1020"/>
         <image name="londonflag" width="512" height="512"/>
-        <image name="mall" width="1000" height="1007"/>
+        <image name="mall" width="999" height="987"/>
         <image name="mountain bg" width="564" height="1002"/>
         <image name="park" width="512" height="370"/>
         <image name="restaurant" width="998" height="748"/>
