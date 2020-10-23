@@ -31,3 +31,25 @@ country(area: "hamburg", restuarant: ["haerlin", "sagners", "philipps"], mall: [
  country(area: "scotland", restuarant: ["theKitchin", "condita", "peatInn"], mall: ["waverleyMall", "fortKinnaird", "theThistlesShoppingMall"], parks: ["queenElizabethForestPark", "cairngorms"])
     
     ,country(area: "wales", restuarant: ["theWalnutTreeInn","theWhiteBrook"], mall: ["cwmbranCentre", "tweedmill"], parks: ["breconBeacons", "weprePark"])]
+struct areas{
+    var area: String
+}
+var turkeyArea : [areas] = [
+    areas(area:"bursa"),
+    areas(area: "istabbul"),
+    areas(area: "ankara")
+]
+var germanyAreas: [areas] = [
+    areas(area: "berlin"),
+areas(area: "hamburg"),
+areas(area: "munich")]
+
+var britainAreas: [areas] = [
+areas(area: "london"),
+areas(area: "scotland"),
+areas(area: "wales")]
+
+struct restaurants{
+    var restaurant: String
+}
+var selectedArray: [areas] = []

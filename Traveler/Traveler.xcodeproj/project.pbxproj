@@ -18,6 +18,8 @@
 		E96500AA253DF351001FA4B2 /* flagsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96500A9253DF351001FA4B2 /* flagsViewController.swift */; };
 		E9D891FC253E1DA70042CD62 /* chooseAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D891FB253E1DA70042CD62 /* chooseAreaViewController.swift */; };
 		E9D8920025403AF50042CD62 /* choosenServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D891FF25403AF50042CD62 /* choosenServiceTableViewCell.swift */; };
+		E9D8920425424E5F0042CD62 /* servicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D8920325424E5F0042CD62 /* servicesViewController.swift */; };
+		E9D89206254253C70042CD62 /* servicesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D89205254253C60042CD62 /* servicesTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		E96500A9253DF351001FA4B2 /* flagsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flagsViewController.swift; sourceTree = "<group>"; };
 		E9D891FB253E1DA70042CD62 /* chooseAreaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chooseAreaViewController.swift; sourceTree = "<group>"; };
 		E9D891FF25403AF50042CD62 /* choosenServiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = choosenServiceTableViewCell.swift; sourceTree = "<group>"; };
+		E9D8920325424E5F0042CD62 /* servicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = servicesViewController.swift; sourceTree = "<group>"; };
+		E9D89205254253C60042CD62 /* servicesTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = servicesTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,8 @@
 				E965009325377D66001FA4B2 /* SceneDelegate.swift */,
 				E965009525377D66001FA4B2 /* loginViewController.swift */,
 				E965009725377D66001FA4B2 /* Main.storyboard */,
+				E9D89205254253C60042CD62 /* servicesTVC.swift */,
+				E9D8920325424E5F0042CD62 /* servicesViewController.swift */,
 				E9D891FF25403AF50042CD62 /* choosenServiceTableViewCell.swift */,
 				E9D891FB253E1DA70042CD62 /* chooseAreaViewController.swift */,
 				E96500A72538D603001FA4B2 /* TableViewCell.swift */,
@@ -158,6 +164,8 @@
 				E965009625377D66001FA4B2 /* loginViewController.swift in Sources */,
 				E9D8920025403AF50042CD62 /* choosenServiceTableViewCell.swift in Sources */,
 				E965009225377D66001FA4B2 /* AppDelegate.swift in Sources */,
+				E9D89206254253C70042CD62 /* servicesTVC.swift in Sources */,
+				E9D8920425424E5F0042CD62 /* servicesViewController.swift in Sources */,
 				E96500A625378292001FA4B2 /* vc1.swift in Sources */,
 				E9D891FC253E1DA70042CD62 /* chooseAreaViewController.swift in Sources */,
 				E965009425377D66001FA4B2 /* SceneDelegate.swift in Sources */,

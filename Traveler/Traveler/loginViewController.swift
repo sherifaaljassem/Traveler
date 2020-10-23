@@ -17,6 +17,7 @@ class ViewController: UIViewController {
    
     @IBAction func logIn(_ sender: Any) {
     }
+    }
     @IBAction func signAsAGuest(_ sender: Any) {
     }
     

@@ -20,12 +20,14 @@ class flagsViewController: UIViewController {
     
         if (sender as AnyObject).tag == 0{
     selectedCountry = turkey
+            selectedArray = turkeyArea
         }else if (sender as AnyObject).tag == 1{
     selectedCountry = germany
         } else if (sender as AnyObject).tag == 2{
     selectedCountry = britain
     }
     }
+    
     /*
     // MARK: - Navigation
 
