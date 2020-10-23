@@ -18,35 +18,29 @@ struct country{
     var parks : [String]
 }
 var turkey = [country(area: "bursa", restuarant: ["zennap", "uzanEtMangal", "egeBalik"], mall: ["kentMeydani", "zafer", "marka"], parks: ["uludag", "golyazi"]),
-              country(area: "istanbul", restuarant: ["bigChef", "balik", "kababjiMahmoud"], mall: ["mallOfIstanbul", "Akbati", "Istinye"], parks: ["yildiz", "emirgan", "gulhane"]),country(area: "ankara", restuarant: ["ekmekArasi","trilye"], mall: ["kentPark", "gordian"], parks: ["eymir", "dickmenVadisi"])]
+              country(area: "istanbul", restuarant: ["bigChef", "balik", "Kebapci"], mall: ["mallOfIstanbul", "Akbati", "Istinye"], parks: ["yildiz", "emirgan", "gulhane"])]
 
-var germany = [country(area: "berlin", restuarant: ["skyKitchen", "restaurantFacil", "aMano"], mall: ["mallOfBerlin", "potsdamerPlatz", "bikiniBerlin"], parks: ["gartenDelWelt", "charlottenburgPalace"]),
-               
-country(area: "hamburg", restuarant: ["haerlin", "sagners", "philipps"], mall: ["phoenixCenter", "billstedt", "levantehaus"], parks: ["plantenUnBlomen", "altonaerVolkspark", "jenisch"])
-    
-    ,country(area: "munich", restuarant: ["luSalentinuBistro","taverna"], mall: ["hofstatt", "stachusPassagen"], parks: ["englishGarten", "hofgarten"])]
+var germany = [country(area: "berlin", restuarant: ["skyKitchen", "restaurantFacil", "aMano"], mall: ["mallOfBerlin", "potsdamerPlatz", "bikiniBerlin"], parks: ["gartenDelWelt", "charlottenburgPalace"])
+    ,country(area: "munich", restuarant: ["savanna","naxos"], mall: ["hofstatt", "stachusPassagen"], parks: ["englishGarten", "hofgarten"])]
 
- var britain = [country(area: "london", restuarant: ["chateau", "theLedbury", "sketch"], mall: ["westFieldLondon", "cardinalPlace", "oneNewChange"], parks: ["victoria", "battersea"]),
-                
- country(area: "scotland", restuarant: ["theKitchin", "condita", "peatInn"], mall: ["waverleyMall", "fortKinnaird", "theThistlesShoppingMall"], parks: ["queenElizabethForestPark", "cairngorms"])
+ var britain = [country(area: "london", restuarant: ["chateau", "theLedbury", "sketch"], mall: ["westFieldLondon", "cardinalPlace", "oneNewChange"], parks: ["victoria", "battersea"])
     
     ,country(area: "wales", restuarant: ["theWalnutTreeInn","theWhiteBrook"], mall: ["cwmbranCentre", "tweedmill"], parks: ["breconBeacons", "weprePark"])]
 struct areas{
     var area: String
 }
+
 var turkeyArea : [areas] = [
     areas(area:"bursa"),
-    areas(area: "istabbul"),
-    areas(area: "ankara")
+    areas(area: "istanbul")
 ]
-var germanyAreas: [areas] = [
+
+var germanyArea: [areas] = [
     areas(area: "berlin"),
-areas(area: "hamburg"),
 areas(area: "munich")]
 
-var britainAreas: [areas] = [
+var britainArea: [areas] = [
 areas(area: "london"),
-areas(area: "scotland"),
 areas(area: "wales")]
 
 struct restaurants{

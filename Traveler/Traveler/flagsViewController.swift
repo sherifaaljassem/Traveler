@@ -23,8 +23,10 @@ class flagsViewController: UIViewController {
             selectedArray = turkeyArea
         }else if (sender as AnyObject).tag == 1{
     selectedCountry = germany
+            selectedArray = germanyArea
         } else if (sender as AnyObject).tag == 2{
     selectedCountry = britain
+            selectedArray = britainArea
     }
     }
     

@@ -13,16 +13,19 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var blurredImage: UIImageView!
     @IBOutlet weak var backgroundImage: UIImageView!
-    @IBOutlet weak var passwordField: UIImageView!
+    @IBOutlet weak var passwordField: UITextField!
    
     @IBAction func logIn(_ sender: Any) {
-    }
+        
+//        let email =  emailField.text!
+//        let pass = passwordField.text!
+//
+
     }
     @IBAction func signAsAGuest(_ sender: Any) {
     }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup afterloading the view.
 }
 }
+

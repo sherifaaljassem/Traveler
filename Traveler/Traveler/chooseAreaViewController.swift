@@ -8,6 +8,8 @@
 
 import UIKit
 var selectedArea : country = country(area: "bursa", restuarant: ["zennap", "uzanEtMangal", "egeBalik"], mall: ["kentMeydani", "zafer", "marka"], parks: ["uludag", "golyazi"])
+
+
 class chooseAreaViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate{
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -21,13 +23,23 @@ class chooseAreaViewController: UIViewController,UIPickerViewDataSource,UIPicker
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
-        var area = selectedArray[row].area
+        let area = selectedArray[row].area
         for area1 in selectedCountry{
             if area == area1.area{
                 selectedArea = area1
             }
         }
-        areaTextField.text = area
+        for area2 in selectedCountry{
+            if area == area2.area{
+                selectedArea = area2
+            }
+        }
+        for area3 in selectedCountry{
+            if area == area3.area{
+                selectedArea = area3
+            }
+        }
+            areaTextField.text = area
         areaTextField.resignFirstResponder()
     }
     
