@@ -7,7 +7,7 @@
 //
 
 import UIKit
-var selectedArea : country = country(area: "bursa", restuarant: ["zennap", "uzanEtMangal", "egeBalik"], mall: ["kentMeydani", "zafer", "marka"], parks: ["uludag", "golyazi"])
+
 
 
 class chooseAreaViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate{

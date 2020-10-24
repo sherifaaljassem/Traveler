@@ -10,9 +10,12 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
 
+    
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var cellImage: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+                // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

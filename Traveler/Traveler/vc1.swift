@@ -47,3 +47,5 @@ struct restaurants{
     var restaurant: String
 }
 var selectedArray: [areas] = []
+
+var selectedArea : country = country(area: "bursa", restuarant: ["zennap", "uzanEtMangal", "egeBalik"], mall: ["kentMeydani", "zafer", "marka"], parks: ["uludag", "golyazi"])

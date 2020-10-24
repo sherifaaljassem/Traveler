@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+var finalViewControllerSelection = [String]()
 class servicesViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -18,14 +18,18 @@ class servicesViewController: UIViewController {
     
 
     @IBAction func mall(_ sender: Any) {
+        finalViewControllerSelection = selectedArea.mall
         performSegue(withIdentifier: "goToChoosenServices", sender: selectedArea.mall)
     }
     
      @IBAction func restaurant(_ sender: Any) {
+        finalViewControllerSelection = selectedArea.restuarant
         performSegue(withIdentifier: "goToChoosenServices", sender: selectedArea.restuarant)
      }
+
     
     @IBAction func park(_ sender: Any) {
+        finalViewControllerSelection = selectedArea.parks
         performSegue(withIdentifier: "goToChoosenServices", sender: selectedArea.parks)
     }
    
